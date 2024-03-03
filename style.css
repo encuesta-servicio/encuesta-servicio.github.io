@@ -5,19 +5,27 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('restaurante.jpeg');
+    background-color: #000;
+    background-image: url('background-image.png');
+    background-repeat: no-repeat;
+    background-position-y: 600px;
 }
+
+#restaurante-img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 .app{
     background: #fff;
     width: 90%;
-    max-width: 600px;
     margin: 100px auto 0;
     border-radius: 10px;
     padding:  30px;
 }
 
 .app h1{
-    font-size: 25px;
+    font-size: 50px;
     color: #001e4d;
     font-weight: 600;
     border-bottom: 1px solid #333;
@@ -29,19 +37,23 @@ body{
 }
 
 .quiz h2{
-    font-size: 18px;
+    font-size: 36px;
     color: #001e4d;
     font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .btn{
+    font-family: inherit;
+    font-size: 30px;
     background: #fff;
     color: #222;
     font-weight: 500;
     width: 100%;
+    height: 60px;
     border: 1px solid #222;
-    padding: 10px;
     margin: 10px;
+    padding-left: 10px;
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
@@ -57,13 +69,16 @@ body{
 }
 
 #next-btn{
+    font-family: inherit;
+    font-size: 25px;
     background: #001e4d;
     color: #fff;
     font-weight: 500;
-    width: 150px;
+    width: 30%;
+    height: 60px;
     border: 0;
     padding: 10px;
-    margin: 10px auto 0;
+    margin: 40px auto 0;
     border-radius: 4px;
     cursor: pointer;
     display: none;
@@ -74,3 +89,10 @@ body{
 .incorrect{
     background: #ff9393;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

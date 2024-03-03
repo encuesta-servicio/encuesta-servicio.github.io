@@ -99,11 +99,6 @@ function selectAnswer(e){
     }else{
         selectedBtn.classList.add("correct");
     }
-    // if(isCorrect){
-    //     selectedBtn.classList.add("correct");
-    // }else{
-    //     selectedBtn.classList.add("incorrect");
-    // }
 
     Array.from(answerButtons.children).forEach(button =>{
         if(button.dataset.correct === "false"){
@@ -123,7 +118,7 @@ function showScore(){
         nextButton.style.display = "block";
     }else{
         questionElement.innerHTML = "Me gustas muchito :3";
-        answerButtons.innerHTML = "<br> <img src = 'mename.JPG' width='520'> <br>";
+        answerButtons.innerHTML = "<br> <img src = 'mename.JPG' width='520' class='center'> <br>";
         nextButton.innerHTML = "FIN";
         nextButton.style.display = "block";
     }
